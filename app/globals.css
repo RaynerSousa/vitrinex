@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tema "cloro" — use aplicando a classe `theme-cloro` no elemento <body> */
+.theme-cloro {
+  --background: #e6fff4; /* verde-claro, tom aquoso */
+  --foreground: #072a20; /* texto escuro com contraste */
+}
+
+/* Variante noturna do tema cloro (quando for necessário usar modo escuro) */
+.theme-cloro.dark {
+  --background: #052016; /* verde-escuro */
+  --foreground: #d8fff0; /* texto claro */
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-cloro {
+    --background: #052016; /* verde-escuro */
+    --foreground: #d8fff0; /* texto claro */
+  }
+}
