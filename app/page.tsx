@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Card from "./components/Cards";
 import { MercadoLivre } from "./lojasOnlines/mercadoLivre";
 
 export default function Home() {
