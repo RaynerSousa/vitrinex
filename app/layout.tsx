@@ -13,8 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/icon.webp",
+  },
   title: "Vitrinex",
-  description: "Plataforma de vitrines digitais para conectar você às melhores ofertas do mercado.",
+  description:
+    "Plataforma de vitrines digitais para conectar você às melhores ofertas do mercado.",
 };
 
 export default function RootLayout({
